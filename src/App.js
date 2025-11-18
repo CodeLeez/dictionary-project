@@ -8,7 +8,7 @@ function App() {
         <header className="App-header"></header>
         Dictionary Project Initial Commit
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="sunrise" />
         </main>
         <small>
           <footer className="App-footer">Coded by Elizabeth</footer>
