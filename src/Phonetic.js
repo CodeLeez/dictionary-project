@@ -14,7 +14,7 @@ export default function Phonetic(props) {
         alert("Sorry, we couldn't play the audio. Please try again later.");
       });
     } else {
-      alert("No audio source found.");
+      alert("Sorry we couldn't play this audio.Please try the next one.");
     }
   };
 

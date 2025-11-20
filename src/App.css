@@ -4,9 +4,14 @@
 }
 
 body {
-  background: rgb(246, 233, 246);
+  background: rgb(248, 232, 248);
 }
 
 a {
   color: purple;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
 }
