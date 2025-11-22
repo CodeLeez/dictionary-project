@@ -8,7 +8,7 @@ function App() {
         <header className="App-header"></header>
         LeezWordNet
         <main>
-          <Dictionary defaultKeyword="sunrise" />
+          <Dictionary defaultKeyword="fast" />
         </main>
         <small>
           <footer className="App-footer">Coded by Elizabeth</footer>
