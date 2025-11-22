@@ -1,30 +1,63 @@
-form {
-  margin: 30px 0;
+/* THEME COLORS */
+:root {
+  --bg: #f8f8f8; /* Page background */
+  --card-bg: #ffffff; /* Card background */
+  --primary: #4f46e5; /* Accent / headings */
+  --text: #111827; /* Main text */
+  --muted: #6b7280; /* Hints / secondary text */
+  --border: #e5e7eb; /* Subtle borders */
 }
 
-.Dictionary h1 {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: -18px;
+/* WRAPPER */
+.Dictionary {
+  color: var(--text);
 }
 
+/* SECTION CARD */
 .Dictionary section {
-  background: white;
-  padding: 30px;
-  border-radius: 6px;
-  box-shadow: 0 10px 20px rgb(0, 0, 0 / 10%);
-  margin: 20px 0;
+  background: var(--card-bg);
+  padding: 28px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin: 25px 0;
+  border-left: 4px solid var(--primary);
 }
 
+/* TITLE */
+.Dictionary h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+
+/* FORM */
+form {
+  margin: 25px 0;
+}
+
+/* SEARCH INPUT */
 .Dictionary input {
   width: 100%;
-  border-radius: 6px;
-  color: #333;
-  padding: 6px 10px;
-  border: 1px solid #ddd;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
+.Dictionary input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.2);
+}
+
+/* HINT TEXT */
 .Dictionary .hint {
-  font-size: 10px;
-  margin-top: -25px;
+  font-size: 13px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-style: italic;
 }

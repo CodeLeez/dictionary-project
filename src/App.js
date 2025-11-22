@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header"></header>
-        Dictionary Project Initial Commit
+        LeezWordNet
         <main>
           <Dictionary defaultKeyword="sunrise" />
         </main>

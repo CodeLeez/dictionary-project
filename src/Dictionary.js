@@ -15,22 +15,16 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResponse(response) {
-    console.log(response.data);
     setPhotos(response.data.photos);
   }
 
   function search() {
-    //documentaion : https://dictionaryapi.dev/
-
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    console.log(apiUrl);
     axios.get(apiUrl).then(handleDictionaryResponse);
 
     let pexelsApiKey =
       "k7yEn0f0Snab1O401H1CB4E0HjLNtpKILVJbd1TzClxbGYs1X3wjbRKB";
-
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-
     let headers = { Authorization: ` ${pexelsApiKey}` };
 
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
@@ -54,19 +48,19 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h1>What do you want to look for ?</h1>
+          <h1 className="dict-title">What word do you want to explore?</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="search"
               autoFocus={true}
               onChange={handleKeywordChange}
               defaultValue={props.defaultKeyword}
+              className="dict-input"
             />
           </form>
-          <div className="hint">
-            suggested words: sunset, deer, plant, yoga ...
-          </div>
+          <div className="hint">Try: sunset, deer, plant, yoga...</div>
         </section>
+
         <Results results={results} />
         <Photos photos={photos} />
       </div>

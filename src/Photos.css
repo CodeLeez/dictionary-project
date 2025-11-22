@@ -1,4 +1,49 @@
+/* PHOTOS SECTION WRAPPER */
+.Photos {
+  margin: 30px 0;
+}
+
+/* Row wrapper for grid */
+.Photos .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Column wrapper */
+.Photos .col-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+/* Images */
 .Photos img {
-  border-radius: 5px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+/* Hover effect for images */
+.Photos img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.2); /* subtle indigo glow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .Photos .col-4 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .Photos .col-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
