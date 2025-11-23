@@ -1,6 +1,3 @@
-/* ----------------------------- */
-/* Global Reset + Smoothing */
-/* ----------------------------- */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -9,9 +6,6 @@
   padding: 0;
 }
 
-/* ----------------------------- */
-/* Body Global Styles */
-/* ----------------------------- */
 body {
   background: linear-gradient(180deg, #f3f3f7, #ecebf3);
   font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,9 +14,6 @@ body {
   line-height: 1.65;
 }
 
-/* ----------------------------- */
-/* App Container */
-/* ----------------------------- */
 .App {
   max-width: 900px;
   margin: 0 auto;
@@ -38,37 +29,25 @@ body {
   box-shadow: 0 28px 55px rgba(0, 0, 0, 0.1);
 }
 
-/* ----------------------------- */
-/* Header Placeholder */
-/* ----------------------------- */
 .App-header {
   margin-bottom: 15px;
 }
 
-/* ----------------------------- */
-/* Main Section */
-/* ----------------------------- */
 main {
   margin-top: 25px;
 }
 
-/* ----------------------------- */
-/* Typography + Titles */
-/* ----------------------------- */
 .container {
   font-size: 30px;
   font-weight: 800;
   letter-spacing: -0.5px;
-  color: #4a2b7f; /* more mature violet */
+  color: #4a2b7f;
   margin-bottom: 28px;
   text-align: center;
 }
 
-/* ----------------------------- */
-/* Links */
-/* ----------------------------- */
 a {
-  color: #7c50d8; /* softened violet */
+  color: #7c50d8;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.15s ease;
@@ -79,9 +58,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ----------------------------- */
-/* Footer */
-/* ----------------------------- */
 .App-footer {
   text-align: center;
   margin-top: 45px;
@@ -91,7 +67,6 @@ a:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Additional small text */
 .App small {
   display: block;
   margin-top: 25px;

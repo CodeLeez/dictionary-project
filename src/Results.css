@@ -1,9 +1,7 @@
-/* WRAPPER */
 .Results {
   margin: 40px 0;
 }
 
-/* WORD TITLE */
 .Results h2 {
   font-size: 34px;
   font-weight: 700;
@@ -11,10 +9,9 @@
   margin-bottom: 28px;
   text-transform: capitalize;
   text-align: center;
-  letter-spacing: -0.5px; /* cleaner typography */
+  letter-spacing: -0.5px;
 }
 
-/* SECTION CARD */
 .Results section {
   background: var(--card-bg, #ffffff);
   padding: 28px 32px;
@@ -25,18 +22,15 @@
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-/* Subtle hover lift (professional feel) */
 .Results section:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Add spacing between multiple sections */
 .Results section + section {
   margin-top: 22px;
 }
 
-/* Slightly soften text inside results */
 .Results section p,
 .Results section div,
 .Results section span {
