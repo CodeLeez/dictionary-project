@@ -1,29 +1,45 @@
 /* WRAPPER */
 .Results {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 /* WORD TITLE */
 .Results h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--primary, #4f46e5);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   text-transform: capitalize;
   text-align: center;
+  letter-spacing: -0.5px; /* cleaner typography */
 }
 
 /* SECTION CARD */
 .Results section {
   background: var(--card-bg, #ffffff);
-  padding: 25px 28px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  margin-bottom: 25px;
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 28px;
   border-left: 4px solid var(--primary, #4f46e5);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-/* Make sections spaced and readable */
+/* Subtle hover lift (professional feel) */
+.Results section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Add spacing between multiple sections */
 .Results section + section {
-  margin-top: 20px;
+  margin-top: 22px;
+}
+
+/* Slightly soften text inside results */
+.Results section p,
+.Results section div,
+.Results section span {
+  line-height: 1.65;
+  font-size: 16px;
 }

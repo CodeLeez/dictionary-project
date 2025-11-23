@@ -1,4 +1,6 @@
-/* Global reset and smoothing */
+/* ----------------------------- */
+/* Global Reset + Smoothing */
+/* ----------------------------- */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -7,70 +9,93 @@
   padding: 0;
 }
 
+/* ----------------------------- */
+/* Body Global Styles */
+/* ----------------------------- */
 body {
-  background: #f2f1f9;
+  background: linear-gradient(180deg, #f3f3f7, #ecebf3);
   font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: #1a1a1a;
   padding: 40px 20px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-/* Container for the entire app */
+/* ----------------------------- */
+/* App Container */
+/* ----------------------------- */
 .App {
   max-width: 900px;
   margin: 0 auto;
-  background: #fcfafa;
-  padding: 40px 50px;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 45px 55px;
+  border-radius: 22px;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
 }
 
-/* Header spacing (you can add a logo or title later if you want) */
+.App:hover {
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------- */
+/* Header Placeholder */
+/* ----------------------------- */
 .App-header {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-/* Main section where your dictionary renders */
+/* ----------------------------- */
+/* Main Section */
+/* ----------------------------- */
 main {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
+/* ----------------------------- */
+/* Typography + Titles */
+/* ----------------------------- */
+.container {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #4a2b7f; /* more mature violet */
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* ----------------------------- */
 /* Links */
+/* ----------------------------- */
 a {
-  color: #a852e3;
+  color: #7c50d8; /* softened violet */
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.15s ease;
 }
 
 a:hover {
+  color: #5b32a8;
   text-decoration: underline;
 }
 
+/* ----------------------------- */
 /* Footer */
+/* ----------------------------- */
 .App-footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 45px;
   padding-top: 20px;
   font-size: 14px;
   color: #6d6d6d;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Typography improvements */
+/* Additional small text */
 .App small {
   display: block;
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
   font-size: 13px;
-  color: #7c7c7c;
-}
-
-/* Make the entire "Dictionary Project Initial Commit" line look nicer */
-.container {
-  font-size: 28px;
-  font-weight: 800;
-  color: #3d0066;
-  margin-bottom: 25px;
-  text-align: center;
+  color: #7d7d7d;
 }

@@ -1,28 +1,33 @@
 /* WRAPPER */
 .Synonyms {
-  margin: 15px 0 0;
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px; /* slightly more space for clarity */
 }
 
-/* SYNONYM ITEMS AS BADGES */
+/* SYNONYM BADGES */
 .Synonyms li {
-  display: inline-block;
-  padding: 6px 12px;
-  background-color: var(--primary, #4f46e5);
-  color: var(--white, #ffffff);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background-color: var(--primary, #4a2b7f); /* matches App theme */
+  color: #ffffff;
   font-size: 14px;
-  border-radius: 20px;
+  font-weight: 500;
+  border-radius: 24px;
   cursor: default;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease;
   user-select: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* HOVER EFFECT */
 .Synonyms li:hover {
-  background-color: #3730a3; /* darker indigo for hover */
-  transform: translateY(-1px);
+  background-color: #36217a; /* slightly darker for hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
