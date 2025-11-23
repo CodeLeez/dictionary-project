@@ -58,7 +58,9 @@ export default function Dictionary(props) {
               className="dict-input"
             />
           </form>
-          <div className="hint">Try: sunset, deer, plant, yoga...</div>
+          <div className="hint">
+            Explore Words: Plant, Harmony, Structure, Vision, Balance...
+          </div>
         </section>
 
         <Results results={results} />
